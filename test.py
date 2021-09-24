@@ -5,7 +5,7 @@ from selenium import webdriver
 
 
 def test_ota(ip):
-    driver = webdriver.Chrome(executable_path=r"C:\webdriver\chromedriver.exe")
+    driver = webdriver.Firefox()
     try:
         driver.get('http://{0}:8888/gem/mmx/connect'.format(ip))
         time.sleep(2)
