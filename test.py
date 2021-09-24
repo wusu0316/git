@@ -2,10 +2,10 @@ import os
 import time
 from selenium import webdriver
 
-
+driver = webdriver.Chrome()
 
 def test_ota(ip):
-    driver = webdriver.Firefox()
+
     try:
         driver.get('http://{0}:8888/gem/mmx/connect'.format(ip))
         time.sleep(2)
